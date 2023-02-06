@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Gizmo_ShowChildren : MonoBehaviour
 {
-    public Color GizmoColour = Color.cyan;
+    public Color gizmoColour = Color.cyan;
     public float gizmoSize = 0.1f;
     public float drawDistance = 25f;
 
@@ -16,7 +16,7 @@ public class Gizmo_ShowChildren : MonoBehaviour
         if (SceneView.lastActiveSceneView.camera != Camera.current) return;
 
         Action<Vector3> draw = null;
-        Gizmos.color = GizmoColour;
+        Gizmos.color = gizmoColour;
 
         switch (drawOption)
         {
